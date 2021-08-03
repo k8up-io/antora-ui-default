@@ -1,0 +1,164 @@
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-smoke-10: #fefefe;
+  --color-smoke-30: #fafafa;
+  --color-smoke-50: #f5f5f5;
+  --color-smoke-70: #f0f0f0;
+  --color-smoke-90: #e1e1e1;
+  --color-gray-10: #c1c1c1;
+  --color-gray-30: #8e8e8e;
+  --color-gray-50: #808080;
+  --color-gray-70: #5d5d5d;
+  --color-jet-20: #4a4a4a;
+  --color-jet-30: #424242;
+  --color-jet-50: #333;
+  --color-jet-70: #222;
+  --color-jet-80: #191919;
+  --color-black: #000;
+
+  /* Project Syn Colors */
+  --syn-purple: #1A1E54;
+  --syn-red: #AB3643;
+  --syn-yellow: #FFBF00;
+  --syn-light-blue: #A1E0E9;
+  --syn-link-color: var(--syn-red);
+  --syn-link-hover-color: var(--syn-light-blue);
+
+  /* VSHN Colors */
+  --vshn-rich-black: #000d1a;
+  --vshn-amber: #ffbf00;
+  --vshn-capri: #4cc3ff;
+  --vshn-light-periwinkle: #D1D5E0;
+  --vshn-roman-silver: #818898;
+  --vshn-silver-sand: #B9BFC6;
+  --vshn-ghost-white: #E9EBF2;
+  --vshn-cultured: #F6F7F9;
+  --vshn-logo-blue: #4081cb;
+  --vshn-link-color: var(--syn-link-color);
+  --vshn-link-hover-color: var(--syn-link-hover-color);
+
+  /* fonts */
+  --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
+  --body-font-size: 1.0625em; /* 17px */
+  --body-font-size--desktop: 1.125em; /* 18px */
+  --body-font-size--print: 0.9375em; /* 15px */
+  --body-line-height: 1.15;
+  --body-font-color: var(--vshn-rich-black);
+  --body-font-family: "Montserrat", sans-serif;
+  --body-font-weight-bold: 900;
+  --monospace-font-family: "Ubuntu Mono", monospace;
+  --monospace-font-weight-bold: 700;
+  /* base */
+  --body-background: var(--color-white);
+  --panel-background: var(--vshn-cultured);
+  --panel-border-color: var(--vshn-silver-sand);
+  --scrollbar-thumb-color: var(--vshn-silver-sand);
+  /* navbar */
+  --navbar-background: var(--syn-purple);
+  --navbar-font-color: var(--syn-light-blue);
+  --navbar_hover-background: var(--syn-yellow);
+  --navbar-button-background: var(--color-white);
+  --navbar-button-border-color: var(--panel-border-color);
+  --navbar-button-font-color: var(--body-font-color);
+  --navbar-menu-border-color: var(--panel-border-color);
+  --navbar-menu-background: var(--syn-purple);
+  --navbar-menu-font-color: var(--syn-light-blue);
+  --navbar-menu_hover-background: var(--syn-yellow);
+  /* nav */
+  --nav-background: var(--panel-background);
+  --nav-border-color: var(--color-gray-10);
+  --nav-line-height: 1.35;
+  --nav-heading-font-color: var(--color-jet-30);
+  --nav-muted-color: var(--color-gray-70);
+  --nav-panel-divider-color: var(--color-smoke-90);
+  --nav-secondary-background: var(--color-smoke-70);
+  /* toolbar */
+  --toolbar-background: var(--panel-background);
+  --toolbar-border-color: var(--panel-border-color);
+  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-muted-color: var(--color-gray-30);
+  --page-version-menu-background: var(--color-smoke-70);
+  --page-version-missing-font-color: var(--color-gray-30);
+  /* admonitions */
+  --caution-color: #a0439c;
+  --caution-on-color: var(--color-white);
+  --important-color: #d32f2f;
+  --important-on-color: var(--color-white);
+  --note-color: #217ee7;
+  --note-on-color: var(--color-white);
+  --tip-color: #41af46;
+  --tip-on-color: var(--color-white);
+  --warning-color: #e18114;
+  --warning-on-color: var(--color-white);
+  /* doc */
+  --doc-font-color: var(--color-jet-50);
+  --doc-font-size: inherit;
+  --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
+  --doc-line-height: 1.6;
+  --doc-margin: 0 auto;
+  --doc-margin--desktop: 0 2rem;
+  --heading-font-color: var(--color-jet-80);
+  --heading-font-weight: 900;
+  --alt-heading-font-weight: var(--body-font-weight-bold);
+  --section-divider-color: var(--panel-border-color);
+  --link-font-color: var(--vshn-link-color);
+  --link_hover-font-color: var(--vshn-silver-sand);
+  --link_unresolved-font-color: var(--important-color);
+  --abstract-background: var(--color-smoke-70);
+  --abstract-font-color: var(--color-jet-20);
+  --abstract-border-color: var(--panel-border-color);
+  --admonition-background: var(--vshn-ghost-white);
+  --admonition-label-font-weight: var(--body-font-weight-bold);
+  --caption-font-color: var(--color-gray-70);
+  --caption-font-weight: var(--body-font-weight-bold);
+  --code-background: var(--panel-background);
+  --code-font-color: var(--body-font-color);
+  --example-background: var(--color-white);
+  --example-border-color: var(--color-gray-70);
+  --kbd-background: var(--panel-background);
+  --kbd-border-color: var(--color-gray-10);
+  --pre-background: var(--panel-background);
+  --pre-border-color: var(--panel-border-color);
+  --pre-annotation-font-color: var(--color-gray-50);
+  --quote-background: var(--panel-background);
+  --quote-border-color: var(--color-gray-70);
+  --quote-font-color: var(--color-gray-70);
+  --quote-attribution-font-color: var(--color-gray-30);
+  --sidebar-background: var(--vshn-ghost-white);
+  --table-border-color: var(--panel-border-color);
+  --table-stripe-background: var(--panel-background);
+  --table-footer-background: linear-gradient(to bottom, var(--color-smoke-70) 0%, var(--color-white) 100%);
+  /* toc */
+  --toc-font-color: var(--nav-muted-color);
+  --toc-heading-font-color: var(--doc-font-color);
+  --toc-border-color: var(--panel-border-color);
+  --toc-line-height: 1.2;
+  /* footer */
+  --footer-line-height: var(--doc-line-height);
+  --footer-background: var(--vshn-cultured);
+  --footer-font-color: var(var(--vshn-roman-silver));
+  --footer-link-font-color: var(--vshn-link-color);
+  /* dimensions and positioning */
+  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+  --drawer-height: var(--toolbar-height);
+  --body-top: var(--navbar-height);
+  --body-min-height: calc(100vh - var(--body-top));
+  --nav-height: calc(var(--body-min-height) - var(--toolbar-height));
+  --nav-height--desktop: var(--body-min-height);
+  --nav-panel-menu-height: calc(100% - var(--drawer-height));
+  --nav-panel-explore-height: calc(50% + var(--drawer-height));
+  --nav-width: calc(270 / var(--rem-base) * 1rem);
+  --toc-top: calc(var(--body-top) + var(--toolbar-height));
+  --toc-height: calc(100vh - var(--toc-top) - 2.5rem);
+  --toc-width: calc(162 / var(--rem-base) * 1rem);
+  --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
+  --doc-max-width: calc(720 / var(--rem-base) * 1rem);
+  --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+  /* stacking */
+  --z-index-nav: 1;
+  --z-index-toolbar: 2;
+  --z-index-page-version-menu: 3;
+  --z-index-navbar: 4;
+}

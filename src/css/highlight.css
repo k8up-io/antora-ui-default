@@ -1,0 +1,149 @@
+/*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: var(--monospace-font-weight-bold);
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: var(--monospace-font-weight-bold);
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: var(--monospace-font-weight-bold);
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: var(--monospace-font-weight-bold);
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: var(--monospace-font-weight-bold);
+}
+
+.meta-info-table {
+  /* Requires an `!important` because these tables have the `stretch` class,
+     which specifies a width of 100% on the same element, and this one takes
+     precedence, for some reason. */
+  width: fit-content!important;
+}
+
+.meta-info-table td {
+  border: 1px solid #c1c7d0;
+}
+
+.meta-info-table td:nth-child(1) {
+  background-color: #f4f5f7;
+  font-weight: bold;
+}
+
+.status-macro {
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: 700;
+  padding: 2px 5px 3px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 76px;
+}
+
+.speculative {
+  color: white;
+  background: #42526e;
+  border: 0 solid #42526e;
+}
+
+.draft {
+  color: black;
+  background: #ff991f;
+  border: 0 solid #ff991f;
+}
+
+.accepted {
+  color: white;
+  background: #00875a;
+  border: 0 solid #00875a;
+}
+
+.rejected {
+  color: white;
+  background: #bf2600;
+  border: 0 solid #bf2600;
+}
+
+.implemented {
+  color: white;
+  background: #00875a;
+  border: 0 solid #00875a;
+}
+
+.obsolete {
+  color: white;
+  background: #0052cc;
+  border: 0 solid #0052cc;
+}
