@@ -42,7 +42,7 @@
 
 .page-versions .version-menu a:hover {
   text-decoration: none;
-  color: var(--vshn-capri);
+  color: var(--k8up-link-color);
 }
 
 .page-versions .version {

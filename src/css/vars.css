@@ -17,13 +17,20 @@
   --color-jet-80: #191919;
   --color-black: #000;
 
+  /* K8up Colors */
+  --k8up-blue: #1A5CE6;
+  --k8up-teal: #a08794;
+  --k8up-salmon: #bb7e8c;
+  --k8up-brick: #c9b6be;
+  --k8up-purple: #d1becf;
+  --k8up-link-color: var(--k8up-blue);
+  --k8up-link-hover-color: var(--k8up-blue);
+
   /* Project Syn Colors */
   --syn-purple: #1A1E54;
   --syn-red: #AB3643;
   --syn-yellow: #FFBF00;
   --syn-light-blue: #A1E0E9;
-  --syn-link-color: var(--syn-red);
-  --syn-link-hover-color: var(--syn-light-blue);
 
   /* VSHN Colors */
   --vshn-rich-black: #000d1a;
@@ -35,8 +42,6 @@
   --vshn-ghost-white: #E9EBF2;
   --vshn-cultured: #F6F7F9;
   --vshn-logo-blue: #4081cb;
-  --vshn-link-color: var(--syn-link-color);
-  --vshn-link-hover-color: var(--syn-link-hover-color);
 
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -55,16 +60,16 @@
   --panel-border-color: var(--vshn-silver-sand);
   --scrollbar-thumb-color: var(--vshn-silver-sand);
   /* navbar */
-  --navbar-background: var(--syn-purple);
-  --navbar-font-color: var(--syn-light-blue);
-  --navbar_hover-background: var(--syn-yellow);
+  --navbar-background: var(--k8up-brick);
+  --navbar-font-color: var(--color-black);
+  --navbar_hover-background: var(--k8up-salmon);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
-  --navbar-menu-background: var(--syn-purple);
-  --navbar-menu-font-color: var(--syn-light-blue);
-  --navbar-menu_hover-background: var(--syn-yellow);
+  --navbar-menu-background: var(--k8up-brick);
+  --navbar-menu-font-color: var(--color-black);
+  --navbar-menu_hover-background: var(--k8up-salmon);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
@@ -102,7 +107,7 @@
   --heading-font-weight: 900;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: var(--vshn-link-color);
+  --link-font-color: var(--k8up-link-color);
   --link_hover-font-color: var(--vshn-silver-sand);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
@@ -138,7 +143,7 @@
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--vshn-cultured);
   --footer-font-color: var(var(--vshn-roman-silver));
-  --footer-link-font-color: var(--vshn-link-color);
+  --footer-link-font-color: var(--k8up-link-color);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);

@@ -9,7 +9,7 @@
 }
 
 mark {
-  background-color: var(--syn-yellow);
+  background-color: var(--k8up-brick);
 }
 
 @media screen and (min-width: 1024px) {

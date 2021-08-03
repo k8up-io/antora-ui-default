@@ -17,41 +17,6 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
 
-== SDD Summary Tables
-
-:sdd_author:    Author Name
-:sdd_owner:     SIG Syn
-:sdd_reviewers: SIG Syn
-:sdd_date:      2019-10-18
-:sdd_status:    obsolete
-
-[.meta-info-table,cols="2*"]
-|===
-| Author
-| {sdd_author}
-
-| Owner
-| {sdd_owner}
-
-| Reviewers (SIG)
-| {sdd_reviewers}
-
-| Date
-| {sdd_date}
-
-| Status
-| [.{sdd_status} .status-macro]#{sdd_status}#
-|===
-
-== SDD Status
-
-* [.obsolete .status-macro]#obsolete#
-* [.implemented .status-macro]#implemented#
-* [.rejected .status-macro]#rejected#
-* [.accepted .status-macro]#accepted#
-* [.draft .status-macro]#draft#
-* [.speculative .status-macro]#speculative#
-
 == MathJax
 
 This is the solution of a famous equation

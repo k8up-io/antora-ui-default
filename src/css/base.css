@@ -28,18 +28,18 @@ body {
 a {
   text-decoration: none;
   font-weight: normal;
-  color: var(--syn-link-color);
+  color: var(--k8up-link-color);
 }
 
 a:hover {
   text-decoration: none;
-  color: var(--syn-link-hover-color);
+  color: var(--k8up-link-hover-color);
 }
 
 a:active {
   text-decoration: none;
   background-color: none;
-  color: var(--syn-link-hover-color);
+  color: var(--k8up-link-hover-color);
 }
 
 code,

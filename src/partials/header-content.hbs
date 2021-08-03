@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <div class="navbar-item">
-        <div class="syn_logo"></div>
+        <div class="k8up_logo"></div>
         <a href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}
           {{#unless (eq page.componentVersion.displayVersion "master")}}{{#unless (eq page.layout '404')}} –
           v{{page.componentVersion.displayVersion}}{{/unless}}{{/unless}}</a>
@@ -15,7 +15,7 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item has-dropdown is-hoverable">
+        {{!-- <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Tools</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://syn.tools/commodore/">Commodore</a>
@@ -26,7 +26,7 @@
             <a class="navbar-item" href="https://syn.tools/lieutenant-operator/">Lieutenant Operator</a>
             <a class="navbar-item" href="https://syn.tools/steward/">Steward</a>
           </div>
-        </div>
+        </div> --}}
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">
             <div class="vshn-unified-logo"></div>
@@ -39,6 +39,7 @@
             <a class="navbar-item" target="_blank" href="https://legal.docs.vshn.ch/">Legal</a>
             <a class="navbar-item" target="_blank" href="https://control.docs.vshn.ch/">Portal Help</a>
             <a class="navbar-item" target="_blank" href="https://docs.appuio.ch/">APPUiO Documentation</a>
+            <a class="navbar-item" target="_blank" href="https://syn.tools/">Project Syn</a>
           </div>
         </div>
         <div class="navbar-item">
@@ -50,7 +51,7 @@
           </div>
         </div>
         <div class="navbar-item">
-          <a class="navbar-item" href="https://github.com/projectsyn/" target="_blank"><i
+          <a class="navbar-item" href="https://github.com/k8up-io/" target="_blank"><i
               class="fa fa-github" style="font-size: 30px;"></i>&nbsp;
             GitHub</a>
         </div>

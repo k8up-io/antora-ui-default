@@ -146,7 +146,7 @@ html.is-clipped--nav {
 
 .nav-link:hover  {
   text-decoration: none;
-  color: var(--syn-link-color);
+  color: var(--k8up-link-color);
 }
 
 .is-current-page > .nav-link,
@@ -255,7 +255,7 @@ html.is-clipped--nav {
 
 .nav-panel-explore .component .version a:hover {
   text-decoration: none;
-  color: var(--syn-link-color);
+  color: var(--k8up-link-color);
 }
 
 .nav-panel-explore .component .is-current a {
