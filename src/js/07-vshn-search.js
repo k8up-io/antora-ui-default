@@ -20,7 +20,7 @@
     searchParagraph.className = 'search-paragraph'
 
     var versionBubble = document.createElement('span')
-    versionBubble.innerText = item.version
+    versionBubble.innerText = isEmptyOrBlank(item.version) ? 'master' : item.version
     versionBubble.className = 'version-bubble'
     searchParagraph.appendChild(versionBubble)
 
