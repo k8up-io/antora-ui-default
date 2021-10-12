@@ -19,6 +19,11 @@
     var searchParagraph = document.createElement('p')
     searchParagraph.className = 'search-paragraph'
 
+    var versionBubble = document.createElement('span')
+    versionBubble.innerText = item.version
+    versionBubble.className = 'version-bubble'
+    searchParagraph.appendChild(versionBubble)
+
     var searchEntry = document.createElement('a')
     searchEntry.innerText = item.name
     searchEntry.href = item.href
@@ -97,7 +102,6 @@
     xmlhttp.onreadystatechange = function () {
       if (xmlhttp.readyState === XMLHttpRequest.DONE) {
         if (xmlhttp.status === 200) {
-          console.log(xmlhttp.responseText)
           callback(JSON.parse(xmlhttp.responseText))
         } else {
           console.log('Status received: ' + xmlhttp.status)

@@ -884,6 +884,15 @@ h1.page + aside.toc.embedded {
   padding-bottom: 0.5em;
 }
 
+.doc .search-div .search-paragraph .version-bubble {
+  border-radius: 9px;
+  background-color: var(--k8up-blue);
+  color: white;
+  padding: 0px 6px 0px 6px;
+  font-size: small;
+  margin: 0px 5px 0px 0px;
+}
+
 .doc .search-div .search-paragraph .search-link {
   font-size: small;
   font-weight: normal;
