@@ -10,16 +10,5 @@ If you typed the URL of this page manually, please double check that you entered
 <div class="paragraph">
 <p>Please use the chat window to tell us how you got here so we can fix it.</p>
 </div>
-<script>
-function openWidget () {
-    window.HubSpotConversations.widget.open();
-}
-if (window.HubSpotConversations) {
-    openWidget();
-}
-else {
-    window.hsConversationsOnReady = [openWidget];
-}
-</script>
 {{> pagination}}
 </article>
