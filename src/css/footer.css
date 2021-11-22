@@ -4,13 +4,48 @@ footer.footer {
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: var(--footer-line-height);
   padding: 0.5rem 1rem;
+  width: 100%;
 }
 
-.footer p {
-  margin: 0.5rem 0;
+.footer span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+  padding: 0 20 0 20;
 }
 
 .footer a {
   color: var(--footer-link-font-color);
   font-weight: var(--body-font-weight-bold);
+}
+
+.footer span.cncf_sandbox {
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer span.cncf_logo {
+  text-align: right;
+}
+
+.footer span.cncf_logo img {
+  width: 200px;
+}
+
+@media screen and (max-width: 1023.5px) {
+  .footer span {
+    display: block;
+    width: 100%;
+    padding: 0 20 0 20;
+    text-align: left;
+  }
+
+  .footer span.cncf_sandbox {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .footer span.cncf_logo {
+    text-align: left;
+  }
 }
