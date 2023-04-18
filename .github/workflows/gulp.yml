@@ -1,0 +1,50 @@
+name: build & release
+
+on:
+  push:
+    branches: [ '*' ]
+    tags: [ '*' ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Checkout 
+      uses: actions/checkout@v2
+
+    - name: Docker Run Action
+      uses: addnab/docker-run-action@v3
+      with:
+        image: node:10.14.2-stretch
+        options: -v ${{ github.workspace }}:/workspace
+        run: |
+          cd /workspace
+          npm install
+          npx gulp clean; npx gulp build; npx gulp bundle:pack
+
+    # the artifact is available for all builds (branches, pull requests)
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: ui-bundle
+        path: build/ui-bundle.zip
+
+    - name: Changelog
+      uses: scottbrenner/generate-changelog-action@master
+      id: Changelog
+      with:
+        allow-unknown: true
+        to-tag: ${{ github.ref }}
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/') # create release only if this is a tag
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "build/ui-bundle.zip"
+        artifactContentType: "application/zip"
+        body: |
+          ${{ steps.Changelog.outputs.changelog }}
+        token: ${{ secrets.GITHUB_TOKEN }}
