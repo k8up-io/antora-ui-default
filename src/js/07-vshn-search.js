@@ -1,6 +1,14 @@
 ; (function () {
   'use strict'
 
+  // Find the version the user is looking at and store it in a variable
+  var currentPageVersion = 'master'
+  var currentPageVersionObjects = document.querySelectorAll('span.version')
+  if (currentPageVersionObjects && currentPageVersionObjects.length > 0) {
+    // In Antora 3.x websites, there's a <SPAN> object that shows the value of the current version
+    currentPageVersion = currentPageVersionObjects[0].innerText
+  }
+
   // Checks whether a string is empty, blank, null or undefined
   function isEmptyOrBlank (str) {
     return (!str || str.length === 0 || !str.trim())
@@ -109,7 +117,7 @@
       }
     }
 
-    var url = '/search?q=' + encodeURIComponent(query)
+    var url = '/search?q=' + encodeURIComponent(query) + '&v=' + currentPageVersion
     xmlhttp.open('GET', url, true)
     xmlhttp.send()
   }
