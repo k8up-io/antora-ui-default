@@ -2,12 +2,9 @@
   'use strict'
 
   // Find the version the user is looking at and store it in a variable
-  var currentPageVersion = 'master'
-  var currentPageVersionObjects = document.querySelectorAll('span.version')
-  if (currentPageVersionObjects && currentPageVersionObjects.length > 0) {
-    // In Antora 3.x websites, there's a <SPAN> object that shows the value of the current version
-    currentPageVersion = currentPageVersionObjects[0].innerText
-  }
+  // There's a <INPUT> object set in src/partials/header-content.hbs with the current version
+  var currentPageVersionObject = document.getElementById('search-page-version-filter')
+  var currentPageVersion = currentPageVersionObject.value
 
   // Checks whether a string is empty, blank, null or undefined
   function isEmptyOrBlank (str) {

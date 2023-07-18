@@ -18,6 +18,12 @@ body {
   z-index: var(--z-index-navbar);
 }
 
+.navbar-main-title {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
 .navbar a {
   text-decoration: none;
 }

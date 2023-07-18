@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <div class="navbar-item">
+      <div class="navbar-item navbar-main-title">
         <div class="k8up_logo"></div>
         <a href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}
           {{#unless (eq page.componentVersion.displayVersion "master")}}{{#unless (eq page.layout '404')}} –
@@ -17,6 +17,9 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="search-field">
+            {{!-- This hidden INPUT object holds the currently displayed version of the documentation
+            and is used by the search engine code in src/js/07-vshn-search.js to filter search results --}}
+            <input id="search-page-version-filter" type="hidden" value="{{page.componentVersion.displayVersion}}">
             <input id="search-input" class="search-input" type="search" placeholder="Search">
             <button type="submit" class="search-button">
               <i class="fa fa-search"></i>
